@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rd60xx"
+version = "0.1.0"
+description = "Helper library for Riden RD60xx programmable power supplies over Modbus RTU (USB)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name = "Andrei", email = "andrei.minaev@gmail.com" }
+]
+license = { text = "MIT" }
+
+dependencies = [
+  "minimalmodbus",
+  "pyserial",
+]
+
+[project.urls]
+Homepage = "https://github.com/quantumfish/rd60xx"  
+
+[tool.setuptools.packages.find]
+where = ["src"]
